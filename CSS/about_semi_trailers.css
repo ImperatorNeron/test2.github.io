@@ -1,0 +1,299 @@
+.main {
+    padding: 120px 0 80px 0;
+}
+
+.parameters {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.p-title {
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 2px dashed gray;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.par-block {
+    display: flex;
+    gap: 25px;
+}
+
+.tech-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    font-size: 0.93rem;
+}
+
+.key-value {
+    display: flex;
+    padding-bottom: 40px;
+    gap: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.key-value:last-child {
+    border-bottom: 0;
+}
+
+.key,
+.value {
+    flex: 1;
+}
+
+.add-options {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.options {
+    display: none;
+}
+
+.options-first {
+    display: flex;
+}
+
+.options>.el,
+.options-first>.element {
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.active-op,
+.active-element {
+    border-radius: 5px 5px 0 0;
+    transition-duration: 0.3s;
+}
+
+.active-element {
+    background-color: black;
+    color: white;
+}
+
+.active-op {
+    font-weight: bold;
+    background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+}
+
+.option-text,
+.options-first-text {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0 10px 0 0;
+    font-size: 1.15rem;
+}
+
+.option-text {
+    display: none;
+}
+
+.active-text {
+    display: block;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    margin: 0 100px;
+}
+
+.order-photo-block {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-photo {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    /* висота = ширина * (3 / 4) */
+    /* додаткові стилі для відображення зображення */
+    background-image: url('../photos/photo_5321490464752387445_y-removebg-preview.png');
+    background-size: 100% 100%;
+    background-position: center;
+    transition-duration: 0.5s;
+}
+
+.order-photo:hover {
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+
+.order-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.order-button {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px;
+    text-align: center;
+    transition-duration: 0.5s;
+    margin-top: auto;
+}
+
+.order-button:hover {
+    background-color: rgb(48, 48, 48);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.order-type {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.order-text {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1279px) {
+    .order {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 50px;
+        margin: 0 200px;
+    }
+
+    .order-photo-block {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .order-text {
+        font-size: 1.4rem;
+    }
+
+    .order-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .options-first,
+    .options-first-text {
+        display: none;
+    }
+
+    .options>div:first-child {
+        border: 2px solid black;
+        border-width: 2px 2px 1px 2px;
+    }
+
+    .options>div:last-child {
+        border: 2px solid black;
+        border-width: 0 2px 2px 2px;
+    }
+
+    .options>div:not(:first-child):not(:last-child) {
+        border: 2px solid black;
+        border-width: 0 2px 1px 2px;
+    }
+
+    .active-op {
+        border-radius: 0;
+    }
+
+    .parameters {
+        padding: 0 30px;
+    }
+
+    .add-options {
+        margin: 100px 30px;
+    }
+
+    .par-block {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .key-value:last-child {
+        border-bottom: 1px solid gray;
+    }
+}
+
+@media (max-width: 900px) {
+    .order {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .order {
+        grid-template-columns: 1fr;
+    }
+
+    .order-photo-block {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .order-type {
+        gap: 17px;
+    }
+
+    .order-text {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .order-text {
+        font-size: 1.1rem;
+    }
+
+    .order-title {
+        font-size: 1.3rem;
+    }
+
+    .p-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .order {
+        margin: 0 10px;
+    }
+
+    .parameters {
+        padding: 0 10px;
+    }
+
+    .add-options {
+        margin: 100px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .option-text {
+        font-size: 0.9rem;
+    }
+}
