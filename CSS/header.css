@@ -20,9 +20,9 @@ header {
 }
 
 .logo {
-    padding: 0 40px 0 20px;
+    padding: 0 30px 0 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 21px;
     font-weight: bold;
 }
 
@@ -186,6 +186,6 @@ a {
 
 @media (max-width: 350px){
     .logo{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
