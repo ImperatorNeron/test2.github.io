@@ -1,0 +1,268 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.main-photo {
+    background-image: url('https://grunwald.ru/upload/resize_cache/iblock/467/ue7yq7feffmbki1q5r97g6sk6kcfbry5/1920_532_240cd750bba9870f18aada2478b24840a/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D1%80%D0%B8%D1%86%D0%B5%D0%BF%D1%8B%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B5%20%D1%82%D1%80%D0%B5%D0%B9%D0%B4-%D0%B8%D0%BD%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.container-little-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 65px 250px 100px 250px;
+}
+
+.container-little-about .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.container-little-about .text {
+    padding-right: 300px;
+    line-height: 25px;
+}
+
+.what-title,
+.advantages-title {
+    font-size: 1.7rem;
+    padding: 0 250px 50px 250px;
+    font-weight: 600;
+}
+
+.what-is-trade-in,
+.advantages {
+    display: flex;
+    gap: 35px;
+}
+
+.what-is-trade-in,
+.advantages {
+    padding: 0 150px 100px 150px;
+}
+
+.container-explain {
+    flex: 1;
+}
+
+.container-explain .photo {
+    margin-bottom: 40px;
+}
+
+.container-explain .text {
+    line-height: 25px;
+}
+
+.photo-1,
+.photo-2,
+.photo-3 {
+    position: relative;
+    min-width: 250px;
+    padding-top: 65%;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.photo-1 {
+    background-image: url('../photos/IMG-2107bf0e2aaef0070871ba7c40aa1279-V.jpg');
+}
+
+.photo-2 {
+    background-image: url('../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg');
+}
+
+.photo-3 {
+    background-image: url('../photos/IMG-2b8247499ea4fa0b29d882daa17c96c6-V.jpg');
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.advantage-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.advantage-header .title {
+    font-size: 1.7rem;
+    line-height: 40px;
+    flex: 1;
+}
+
+.advantage .icon {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.advantage .text {
+    line-height: 25px;
+}
+
+.icon-1 {
+    background-image: url("../photos/fast-time.png");
+}
+
+.icon-2 {
+    background-image: url("../photos/shield.png");
+}
+
+.icon-3 {
+    background-image: url("../photos/coin.png");
+}
+
+.leasing-container {
+    display: flex;
+    gap: 70px;
+    padding: 0 150px 100px 150px;
+}
+
+.left {
+    flex: 2;
+}
+
+.left .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.left .text {
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.right {
+    flex: 5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 16px;
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 150px;
+    width: 100%;
+    resize: vertical;
+}
+
+.btn {
+    width: 50%;
+    background-color: rgb(129, 129, 129);
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(157, 157, 157);
+    transition-duration: 0.3s;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.f4 {
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.f4:hover {
+    border-color: rgb(44, 44, 44);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1279px) {
+    .main-photo {
+        height: 350px;
+    }
+
+    .container-little-about .text {
+        padding-right: 0;
+    }
+
+    .what-is-trade-in,
+    .advantages,
+    .leasing-container {
+        padding: 0 70px 100px 70px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advantage {
+        width: 300px;
+    }
+
+    .what-is-trade-in,
+    .advantages,
+    .leasing-container {
+        padding: 0 15px 100px 15px;
+    }
+
+    .container-little-about {
+        padding: 65px 15px 100px 15px;
+    }
+
+    .what-title,
+    .advantages-title {
+        padding: 0 15px 50px 15px;
+    }
+
+    .what-is-trade-in{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .container-explain .photo{
+        margin-bottom: 20px;
+    }
+
+    .container-explain .text{
+        font-size: 1.3rem;
+    }
+    
+    .leasing-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 665px){
+    .advantage{
+        width: 100%;
+    }
+    .advantage{
+        gap: 50px;
+    }
+}

@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/services_page.css">
+    <link rel="stylesheet" href="CSS/trade_in.css">
     <link rel="stylesheet" href="CSS/footer.css">
-    <title>Gruz Resurse</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -57,33 +57,78 @@
         </nav>
     </header>
     <div class="main">
-        <div class="root"><a href="index.html">Головна</a> >> <b>Сервіс</b></div>
-        <div class="our-services">Наша компанія пропонує</div>
-        <div class="service-cards">
-            <div class="card photo-1">
-                <a href="attention.html" class="photo-text">
-                    Обслуговування
-                </a>
+        <div class="main-photo"></div>
+        <div class="container-little-about">
+            <div class="title">GRUZ-RESURSE TRADE-IN</div>
+            <div class="text">Змініть свій напівпричіп на нову комерційну техніку за допомогою послуги
+                "Trade-in". Будь-який власник транспортного засобу, незалежно від бренду, може скористатися цією
+                послугою. Відтепер послуга доступна від компанії GRUZ-RESURSE.</div>
+        </div>
+        <div class="what-title">ЩО ТАКЕ ТРЕЙД-ІН ВІД GRUZ-RESURSE</div>
+        <div class="what-is-trade-in">
+            <div class="container-explain">
+                <div class="photo photo-1"></div>
+                <div class="text">Простий та зрозумілий механізм, який дозволяє здати існуючий напівпричіп на рахунок
+                    нового. Це можна зробити прямо зараз.</div>
             </div>
-            <div class="card photo-2">
-                <a href="trade-in.html" class="photo-text">
-                    Trade-in
-                </a>
+            <div class="container-explain">
+                <div class="photo photo-2"></div>
+                <div class="text">Кваліфіковані фахівці проведуть діагностику та оцінять ваш транспортний засіб належним
+                    чином.</div>
             </div>
-            <div class="card photo-3">
-                <a href="#" class="photo-text">
-                    Leasing
-                </a>
+            <div class="container-explain">
+                <div class="photo photo-3"></div>
+                <div class="text">Ми запропонуємо справедливу ціну за його викуп, і ця сума стане першим внеском за нову
+                    комерційну техніку GRUZ-RESURSE.</div>
             </div>
-            <div class="card photo-4">
-                <a href="#" class="photo-text">
-                    Доставка небезпечних вантажів по Україні та Європі
-                </a>
+        </div>
+        <div class="advantages-title">НАШІ ПЕРЕВАГИ</div>
+        <div class="advantages">
+            <div class="advantage">
+                <div class="advantage-header">
+                    <div class="icon icon-1"></div>
+                    <div class="title">Ми цінимо час клієна</div>
+                </div>
+                <div class="text">Угода займає не більше двох днів. Ви зразу приступаєте до роботи на новому
+                    напівпричепі, не чекаючи продажу старого.</div>
             </div>
-            <div class="card photo-5">
-                <a href="#" class="photo-text">
-                    Оптовий продаж палива
-                </a>
+            <div class="advantage">
+                <div class="advantage-header">
+                    <div class="icon icon-2"></div>
+                    <div class="title">Ризики зведені до мінімуму</div>
+                </div>
+                <div class="text">Зміна попиту на ринку або довгострокова реалізація наявного напівпричепа не стануть
+                    для вас проблемою.</div>
+            </div>
+            <div class="advantage">
+                <div class="advantage-header">
+                    <div class="icon icon-3"></div>
+                    <div class="title">Переконлива перевага</div>
+                </div>
+                <div class="text">Спеціальні умови на придбання нової комерційної техніки Grunwald подарують вам
+                    додаткову перевагу.</div>
+            </div>
+        </div>
+        <div class="leasing-container">
+            <div class="left">
+                <div class="title">Форма заявки trade-in</div>
+                <div class="text">Будь ласка, заповніть форму заявки, і фахівці зв'яжуться з вами.
+                </div>
+            </div>
+            <div class="right">
+                <form action="" method="get">
+                    <input type="text" class="field f1" placeholder="Ваше ім'я">
+                    <input type="text" class="field f2" placeholder="Email">
+                    <input type="text" class="field f3" placeholder="Номер телефону">
+                    <textarea placeholder="Опишіть вашу техніку та техніку, яку хочете отримати"
+                        class="field"></textarea>
+                    <label class="field f4">
+                        <input type="file" name="photo" onchange="updateFileName(this)">
+                        <span>Натисність та завантажте фото вашої техніки</span>
+                    </label>
+
+                    <button class="btn">Відправити</button>
+                </form>
             </div>
         </div>
     </div>
@@ -146,7 +191,14 @@
         </div>
         <div class="rights">© 2023 Груз Ресурс, Україна. Всі права захищені.</div>
     </div>
-    <script src="JS/menu_script.js"></script>
 </body>
+<script>
+    function updateFileName(input) {
+        var filename = input.files[0].name;
+        var label = input.closest('.field');
+        label.querySelector('span').innerHTML = filename;
+    }
+</script>
+<script src="JS/menu_script.js"></script>
 
 </html>
