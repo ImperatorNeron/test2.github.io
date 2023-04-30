@@ -219,10 +219,11 @@ input[type="file"] {
     .advantages {
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .advantage {
-        width: 300px;
+        width: 500px;
     }
 
     .what-is-trade-in,
