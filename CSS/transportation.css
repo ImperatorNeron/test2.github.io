@@ -153,36 +153,69 @@ textarea {
     .main-photo {
         height: 350px;
     }
+
     .form-container {
         padding: 0 30px 100px 30px;
         flex-direction: column;
         gap: 30px;
     }
+
     .container-little-about {
         padding: 65px 15px 100px 15px;
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .main-photo {
         height: 270px;
     }
 }
 
-@media (max-width: 630px){
+@media (max-width: 630px) {
     .main-photo {
         height: 170px;
     }
-    .container-text .title{
+
+    .container-text .title {
         font-size: 1.6rem;
     }
-    .container-text ol{
+
+    .container-text ol {
         font-size: 0.9rem;
     }
-    .container-text{
+
+    .container-text {
         margin: 0;
     }
-    .container-about-adr{
+
+    .container-about-adr {
         gap: 40px;
     }
+}
+
+@media (max-width: 630px) {
+
+    .container-little-about .title,
+    .form-container .title {
+        font-size: 1.5rem;
+    }
+
+    .container-little-about .text,
+    .left .text {
+        font-size: 0.9rem;
+    }
+
+    .container-text .title,
+    .left .title {
+        font-size: 1.3rem;
+    }
+
+    .container-text ol {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
 }
