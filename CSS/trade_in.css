@@ -228,7 +228,9 @@ input[type="file"] {
     .what-is-trade-in,
     .advantages,
     .leasing-container {
-        padding: 0 15px 100px 15px;
+        padding: 0 30px 100px 30px;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .container-little-about {
@@ -251,11 +253,7 @@ input[type="file"] {
     .container-explain .text{
         font-size: 1.3rem;
     }
-    
-    .leasing-container{
-        flex-direction: column;
-        gap: 30px;
-    }
+
 }
 
 @media (max-width: 665px){
@@ -264,5 +262,8 @@ input[type="file"] {
     }
     .advantage{
         gap: 50px;
+    }
+    .main-photo {
+        height: 170px;
     }
 }

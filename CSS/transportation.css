@@ -1,0 +1,188 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.main-photo {
+    background-image: url('../photos/dungeor1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.container-little-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 65px 250px 100px 250px;
+}
+
+.container-little-about .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.container-little-about .text {
+    padding-right: 300px;
+    line-height: 25px;
+}
+
+.container-about-adr {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+.container-about-adr .photo {
+    height: 500px;
+    width: 750px;
+    background-image: url('../photos/tanker.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text {
+    flex: 3;
+    margin-right: 50px;
+}
+
+.container-text .title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container-text ol {
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.form-container {
+    display: flex;
+    gap: 70px;
+    padding: 0 150px 100px 150px;
+}
+
+.left {
+    flex: 2;
+}
+
+.left .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.left .text {
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.right {
+    flex: 5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 16px;
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 150px;
+    width: 100%;
+    resize: vertical;
+}
+
+.btn {
+    width: 50%;
+    background-color: rgb(129, 129, 129);
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(157, 157, 157);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1279px) {
+    .container-about-adr {
+        flex-direction: column;
+        margin: 0 15px 70px 15px;
+    }
+
+    .container-about-adr .photo {
+        height: 0;
+        width: 100%;
+        padding-top: 40%;
+        background-image: url('../photos/tanker.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .container-text {
+        margin: 0 20px;
+    }
+
+    .container-little-about .text {
+        padding-right: 0;
+    }
+
+    .form-container {
+        padding: 0 70px 100px 70px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .main-photo {
+        height: 350px;
+    }
+    .form-container {
+        padding: 0 30px 100px 30px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-little-about {
+        padding: 65px 15px 100px 15px;
+    }
+}
+
+@media (max-width: 800px){
+    .main-photo {
+        height: 270px;
+    }
+}
+
+@media (max-width: 630px){
+    .main-photo {
+        height: 170px;
+    }
+    .container-text .title{
+        font-size: 1.6rem;
+    }
+    .container-text ol{
+        font-size: 0.9rem;
+    }
+    .container-text{
+        margin: 0;
+    }
+    .container-about-adr{
+        gap: 40px;
+    }
+}
