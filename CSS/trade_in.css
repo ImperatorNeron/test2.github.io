@@ -167,7 +167,7 @@ textarea {
     resize: vertical;
 }
 
-.btn {
+.custom-btn {
     width: 50%;
     background-color: rgb(129, 129, 129);
     padding: 10px 0;
@@ -179,7 +179,7 @@ textarea {
     transition-duration: 0.3s;
 }
 
-.btn:hover {
+.custom-btn:hover {
     background-color: rgb(157, 157, 157);
     transition-duration: 0.3s;
 }
@@ -312,7 +312,7 @@ input[type="file"] {
         font-size: 1.4rem;
     }
 
-    .btn{
+    .custom-btn{
         width: 90%;
     }
 

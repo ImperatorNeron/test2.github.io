@@ -207,7 +207,7 @@ textarea {
     resize: none;
 }
 
-.btn {
+.custom-btn {
     width: 100%;
     padding: 0.5rem 1rem;
     background-color: #1d2228;
@@ -220,7 +220,7 @@ textarea {
     border-radius: 5px;
 }
 
-.btn:hover {
+.custom-btn:hover {
     background-color: #454545;
 }
 
@@ -319,7 +319,7 @@ textarea {
         height: 200px;
     }
 
-    .btn {
+    .custom-btn {
         grid-area: button;
     }
 
