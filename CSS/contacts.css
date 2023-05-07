@@ -9,7 +9,7 @@
     margin-bottom: 50px;
 }
 
-h1 {
+.h1-title {
     font-size: 2.5rem;
     padding-bottom: 20px;
     border-bottom: 2px dashed gray;
@@ -168,14 +168,14 @@ h1 {
     flex-direction: column;
 }
 
-h2 {
+.h2-title {
     position: relative;
     padding: 0 0 10px;
     margin-bottom: 10px;
     margin-top: 0;
 }
 
-h2:after {
+.h2-title:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -323,7 +323,7 @@ textarea {
         grid-area: button;
     }
 
-    h2 {
+    .h2-title {
         grid-area: title;
         margin-bottom: 30px;
     }
@@ -364,7 +364,7 @@ textarea {
 }
 
 @media (max-width: 600px){
-    h1{
+    .h1-title{
         font-size: 2rem;
         text-align: center;
     }
@@ -408,7 +408,7 @@ textarea {
 }
 
 @media (max-width: 350px){
-    h1{
+    .h1-title{
         font-size: 1.5rem;
     }
     .contacts-us{

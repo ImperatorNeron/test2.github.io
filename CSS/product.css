@@ -25,18 +25,18 @@
     text-shadow: 4px 4px 10px #ff4444;
 }
 
-.cards-container{
+.custom-cards-container{
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding: 0 100px;
 }
 
-.cards-container-title{
+.custom-cards-container-title{
     font-size: 3rem;
 }
 
-.cards{
+.custom-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,10 +44,10 @@
     justify-content: center;
 }
 
-.card{
+.custom-card{
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 340px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 2px;
     text-decoration: none;
@@ -58,21 +58,21 @@
     transition-duration: 0.3s;
 }
 
-.card-photo{
+.custom-card-photo{
     height: 170px;
     transition: transform 0.2s ease-in-out; /* додали зміну розміру зображення з ефектом плавності */
 }
 
-.card:hover .card-photo{
+.custom-card:hover .custom-card-photo{
     transform: scale(1.05); /* збільшення розміру зображення на 20% при наведенні */
 }
 
-.card:hover{
+.custom-card:hover{
     border-bottom: 10px solid black;
     transition-duration: 0.3s;
 }
 
-.card-title{
+.custom-card-title{
     font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
@@ -118,7 +118,7 @@
     flex: 1;
 }
 
-.card-content{
+.custom-card-content{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -140,7 +140,7 @@
    }
 }
 
-@media (max-width: 950px){
+@media (max-width: 1120px){
     .container-about{
         flex-direction: column-reverse;
         margin: 0 30px 50px 30px;
@@ -148,7 +148,7 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .about-photo{
-        height: 300px;
+        height: 450px;
         width: 100%;
         flex: none;
     }
@@ -166,29 +166,29 @@
 }
 
 @media (max-width: 910px){
-    .card{
+    .custom-card{
         width: 100%;
         height: auto;
     }
 
-    .card-photo{
+    .custom-card-photo{
         flex: 1;
         height: auto;
         width: auto;
         padding: 40px 40px 0 40px;
     }
-    .card-content{
+    .custom-card-content{
         flex: 1;
         height: auto;
         width: auto;
         padding: 0 20px 20px 20px;
     }
 
-    .card-title{
+    .custom-card-title{
         font-size: 2rem;
     }
 
-    .card-mini-text{
+    .custom-card-mini-text{
         font-size: 1.2rem;
     }
 
@@ -198,13 +198,13 @@
         margin: 0;
         font-size: 2.2rem;
     }
-    .cards-container{
+    .custom-cards-container{
         padding: 0 15px;
     }
-    .card{
+    .custom-card{
         padding: 0;
     }
-    .cards-container-title{
+    .custom-cards-container-title{
         font-size: 2.1rem;
         text-align: center;
     }
@@ -213,6 +213,12 @@
 @media (max-width: 700px){
     .topic-title{
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 650px){
+    .about-photo{
+        height: 300px;
     }
 }
 
