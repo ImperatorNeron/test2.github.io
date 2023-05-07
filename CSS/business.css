@@ -71,10 +71,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 398.4px;
     background-color: #e5e5e5;
     transform: skew(20deg);
-    padding: 0 120px;
+    padding: 0 70px 0 90px;
     box-sizing: border-box;
     padding-left: -200px;
 }
@@ -95,7 +95,7 @@
         font-size: 1.1rem;
     }
     .leasing{
-        padding: 0 80px;
+        padding: 0 50px 0 80px;
     }
 }
 
