@@ -82,11 +82,13 @@
     display: none;
 }
 
-@media (max-width: 1200px){
-    .main-point{
+@media (max-width: 1200px) {
+    .main-point {
         font-size: 20px;
     }
-    .footer-menu, .rights{
+
+    .footer-menu,
+    .rights {
         font-size: 16px;
     }
 }
