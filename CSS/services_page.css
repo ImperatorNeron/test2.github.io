@@ -20,6 +20,10 @@
     transition: transform 0.3s ease;
 }
 
+.custom-card a{
+    text-decoration: none;
+}
+
 .photo-text {
     font-size: 2rem;
     color: white;
@@ -72,6 +76,10 @@
 
 .photo-5::before {
     background-image: url("../photos/palne.jpg");
+}
+
+.photo-6::before {
+    background-image: url("../photos/diagn.jpg");
 }
 
 .card:hover::before {
