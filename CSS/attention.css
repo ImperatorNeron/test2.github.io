@@ -45,96 +45,91 @@
     text-align: center;
 }
 
-.contact-form {
+.leasing-container {
     display: flex;
-    width: 1120px;
-    margin: 0 auto;
-    height: 500px;
-    border-radius: 0 0 10px 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 70px;
+    padding: 0 150px 100px 150px;
 }
 
-
-.right,
 .left {
-    flex: 1;
+    min-width: 320px;
+    flex: 2;
+}
+
+.left .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.left .text {
+    font-size: 1.1rem;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left .text > div:first-child{
+    margin-bottom: 20px;
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    flex: 5;
 }
 
-.left {
-    background-image: url("../photos/IMG-2b8247499ea4fa0b29d882daa17c96c6-V.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 0 0 10px;
-}
-
-.contacts-us {
-    background-color: rgba(0, 0, 0, 0.699);
-    height: 100%;
-    color: white;
-    font-size: 1.5rem;
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-radius: 0 0 0 10px;
-}
-
-h2 {
-    text-align: center;
 }
 
 .field {
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    outline: none;
-    background-color: rgba(236, 236, 236, 0.6);
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s;
+    width: 100%;
     padding: 10px;
-}
-
-.field:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 16px;
+    background-color: transparent;
 }
 
 textarea {
-    height: 150px;
-    resize: none;
+    min-height: 150px;
+    width: 100%;
+    resize: vertical;
 }
 
 .custom-btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: #1d2228;
-    color: #fff;
-    font-size: 1.1rem;
+    width: 50%;
+    background-color: rgb(129, 129, 129);
+    padding: 10px 0;
+    margin-top: 20px;
     border: none;
-    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
     cursor: pointer;
-    transition: .3s;
-    border-radius: 5px;
+    transition-duration: 0.3s;
 }
 
 .custom-btn:hover {
-    background-color: #454545;
+    background-color: rgb(157, 157, 157);
+    transition-duration: 0.3s;
 }
 
-.field:focus {
-    border: 2px solid rgba(30, 85, 250, 0.47);
-    background-color: #fff;
+input[type="file"] {
+    display: none;
 }
 
-@media (max-width: 1220px) {
-    .contact-form {
-        width: 100%;
+@media (max-width: 1279px) {
+    .leasing-container {
+        padding: 0 70px 100px 70px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .leasing-container {
+        padding: 0 30px 100px 30px;
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
@@ -152,29 +147,6 @@ textarea {
     .attention-text {
         flex: none;
     }
-
-    .contacts-us{
-        border-radius: 0;
-    }
-
-    .left{
-        border-radius: 0;
-    }
-
-    .contact-form {
-        flex-direction: column;
-        border-radius: 0 0 10px 10px;
-        height: auto;
-    }
-
-    .left {
-        height: 400px;
-        flex: none;
-    }
-
-    .right {
-        flex: none;
-    }
 }
 
 @media (max-width: 850px) {
@@ -183,7 +155,7 @@ textarea {
     }
 
     .addition {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin: 70px 0;
     }
 
@@ -211,17 +183,17 @@ textarea {
     }
     
     .addition{
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
-    .contacts-us{
-        font-size: 1.2rem;
+
+    .leasing-container{
+        padding: 0 0 100px 0;
     }
-    h2{
-        font-size: 1.3rem;
+
+    .left .title{
+        text-align: center;
     }
-    .left{
-        height: 270px;
-    }
+
 }
 
 @media (max-width: 400px) {
@@ -229,14 +201,18 @@ textarea {
         gap: 25px;
     }
     .addition{
-        margin: 80px 0 30px 0;
+        margin: 80px 0;
     }
     .attention-photo{
         height: 250px;
     }
-    .contacts-us{
+
+    .left{
+        min-width: 0px;
+    }
+
+    .left .text{
         font-size: 0.9rem;
-        text-align: center;
     }
 }
 
@@ -255,5 +231,13 @@ textarea {
 
     .addition{
         font-size: 0.9rem;
+    }
+
+    .left .title{
+        font-size: 1.4rem;
+    }
+
+    .custom-btn{
+        width: 90%;
     }
 }

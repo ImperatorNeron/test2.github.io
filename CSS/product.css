@@ -22,7 +22,7 @@
 
 .main-title{
     margin-left: 130px;
-    text-shadow: 4px 4px 10px #ff4444;
+    text-shadow: 2px 2px 5px #414eff;
 }
 
 .custom-cards-container{
@@ -143,9 +143,7 @@
 @media (max-width: 1120px){
     .container-about{
         flex-direction: column-reverse;
-        margin: 0 30px 50px 30px;
         padding: 0;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .about-photo{
         height: 450px;
@@ -175,7 +173,7 @@
         flex: 1;
         height: auto;
         width: auto;
-        padding: 40px 40px 0 40px;
+        padding: 20px 20px 0 20px;
     }
     .custom-card-content{
         flex: 1;
@@ -228,12 +226,27 @@
     }
 }
 
+@media (max-width: 450px){
+    .custom-card-title{
+        font-size: 1.3rem;
+    }
+    .custom-card-mini-text{
+        font-size: 1rem;
+    }
+    .custom-card-content{
+        gap: 20px;
+    }
+    .photo{
+        height: 300px;
+    }
+}
+
 @media (max-width: 400px){
     .photo{
         height: 230px;
     }
     .about-photo{
-        height: 170px;
+        height: 200px;
     }
     .topic-title{
         font-size: 1.4rem;
@@ -241,8 +254,5 @@
 
     .topic-text{
         font-size: 1rem;
-    }
-    .container-about{
-        margin: 0 15px 15px 15px;
     }
 }

@@ -111,15 +111,15 @@
 }
 
 .icon-1 {
-    background-image: url("../photos/fast-time.png");
+    background-image: url("../photos/contribution.png");
 }
 
 .icon-2 {
-    background-image: url("../photos/shield.png");
+    background-image: url("../photos/payment-method.png");
 }
 
 .icon-3 {
-    background-image: url("../photos/coin.png");
+    background-image: url("../photos/schedule.png");
 }
 
 .leasing-container {
@@ -267,6 +267,12 @@ input[type="file"] {
     }
     .main-photo {
         height: 170px;
+    }
+}
+
+@media (max-width: 420px) {
+    .left .title {
+        font-size: 1.5rem;
     }
 }
 

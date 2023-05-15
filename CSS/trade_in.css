@@ -243,80 +243,95 @@ input[type="file"] {
         padding: 0 15px 50px 15px;
     }
 
-    .what-is-trade-in{
+    .what-is-trade-in {
         flex-direction: column;
         gap: 50px;
     }
-    .container-explain .photo{
+
+    .container-explain .photo {
         margin-bottom: 20px;
     }
 
-    .container-explain .text{
+    .container-explain .text {
         font-size: 1.3rem;
     }
 
 }
 
-@media (max-width: 665px){
-    .advantage{
+@media (max-width: 665px) {
+    .advantage {
         width: 100%;
     }
-    .advantage{
+
+    .advantage {
         gap: 50px;
     }
+
     .main-photo {
         height: 170px;
     }
 }
 
-@media (max-width: 350px){
-    .container-little-about .title{
+@media (max-width: 450px) {
+    .container-explain .text{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .left .title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .container-little-about .title {
         font-size: 1.7rem;
     }
-    .what-title{
+
+    .what-title {
         font-size: 1.4rem;
     }
 
-    .what-is-trade-in{
+    .what-is-trade-in {
         padding: 0 15px 100px 15px;
     }
-    .container-explain .text{
+
+    .container-explain .text {
         font-size: 0.9rem;
     }
 
-    .advantages-title{
+    .advantages-title {
         font-size: 1.4rem;
     }
 
-    .advantage-header .icon{
+    .advantage-header .icon {
         height: 50px;
         width: 50px;
     }
 
-    .advantage-header .title{
+    .advantage-header .title {
         font-size: 1.2rem;
         line-height: 22px;
     }
-    .advantage{
+
+    .advantage {
         gap: 25px;
     }
-    .advantage .text{
+
+    .advantage .text {
         font-size: 0.9rem;
     }
 
-    .leasing-container{
+    .leasing-container {
         padding: 0 15px 100px 15px;
     }
 
-    .left .title{
-        font-size: 1.4rem;
-    }
-
-    .custom-btn{
+    .custom-btn {
         width: 90%;
     }
 
-    .container-explain .photo{
+    .container-explain .photo {
         min-width: 100px;
     }
 }
