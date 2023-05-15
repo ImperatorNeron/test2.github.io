@@ -138,41 +138,8 @@
 
 @media (max-width: 1023px) {
     .swiper {
-        height: 70vh
-    }
-
-    .blur-copy .title {
-        font-size: 1.4rem;
-    }
-
-    .blur-copy .text {
-        font-size: 1rem;
-    }
-
-    .blur-copy .title,
-    .blur-copy .text,
-    .find-out {
-        width: 250px;
-    }
-
-    .swiper-1 {
-        width: 430px;
-    }
-
-    .copy-swiper-pagination {
-        display: block;
-    }
-
-    .swiper .swiper-pagination-bullet {
-        height: 5px;
-        width: 40px;
-    }
-
-}
-
-@media (max-width: 830px) {
-    .swiper {
         width: 0;
+        height: 70vh;
     }
 
     .swiper-1 {
@@ -190,7 +157,16 @@
     .blur-copy .title,
     .blur-copy .text,
     .find-out {
-        width: 280px;
+        width: 400px;
+    }
+
+    .copy-swiper-pagination {
+        display: block;
+    }
+
+    .swiper .swiper-pagination-bullet {
+        height: 5px;
+        width: 40px;
     }
 }
 
@@ -199,22 +175,16 @@
     .blur-copy .title,
     .blur-copy .text,
     .find-out {
-        width: 80%;
+        width: 90%;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 344px) {
     .blur-copy .title {
         font-size: 1.5rem;
     }
 
     .blur-copy .text {
         font-size: 1rem;
-    }
-
-    .blur-copy .title,
-    .blur-copy .text,
-    .find-out {
-        width: 95%;
     }
 }

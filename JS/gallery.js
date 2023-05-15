@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
 
     breakpoints: {
 
-        830: {
+        1023: {
             allowTouchMove: false,
         }
     }

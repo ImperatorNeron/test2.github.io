@@ -1,9 +1,10 @@
 .container-about-tech {
-    margin: 130px 120px;
+    margin: 130px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 35px;
+    max-width: 1300px;
     grid-template-areas:
         "title photo"
         "text photo"
@@ -27,6 +28,7 @@
     background-image: url('../photos/IMG-8bac9a7a421e74bbbfe34a56a86eecf5-V.jpg');
     background-size: cover;
     background-position: center;
+    max-width: 620px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -20px;
     border-radius: 5px;
 }
@@ -50,7 +52,18 @@
     transition-duration: 0.5s;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1550px) {
+    .container-about-tech{
+        margin: 130px 120px;
+        max-width: none;
+    }
+    .about-tech-img {
+        max-width: none;
+    }
+    
+}
+
+@media (max-width: 1400px) {
     .container-about-tech {
         margin: 130px 30px;
         grid-template-areas:
