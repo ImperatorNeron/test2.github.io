@@ -63,7 +63,7 @@
 .photo-3 {
     position: relative;
     min-width: 250px;
-    padding-top: 65%;
+    padding-top: 70%;
     background-size: 100% 100%;
     background-position: center;
 }
@@ -132,13 +132,13 @@
 }
 
 .left .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 50px;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    font-weight: 600;
 }
 
 .left .text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 25px;
 }
 
@@ -224,6 +224,7 @@ input[type="file"] {
 
     .advantage {
         width: 500px;
+        gap: 25px;
     }
 
     .what-is-trade-in,
@@ -234,13 +235,17 @@ input[type="file"] {
         gap: 30px;
     }
 
+    .advantages {
+        gap: 60px;
+    }
+
     .container-little-about {
         padding: 65px 15px 100px 15px;
     }
 
     .what-title,
     .advantages-title {
-        padding: 0 15px 50px 15px;
+        padding: 0 15px 35px 15px;
     }
 
     .what-is-trade-in {
@@ -256,6 +261,16 @@ input[type="file"] {
         font-size: 1.3rem;
     }
 
+    .main-photo {
+        background-position: left;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .main-photo {
+        height: 300px;
+    }
 }
 
 @media (max-width: 665px) {
@@ -263,18 +278,28 @@ input[type="file"] {
         width: 100%;
     }
 
-    .advantage {
-        gap: 50px;
+    .main-photo {
+        height: 210px;
     }
 
+    .container-little-about {
+        padding: 55px 15px 60px 15px;
+    }
+}
+
+@media (max-width: 550px) {
     .main-photo {
-        height: 170px;
+        background-position: center;
+    }
+
+    .leasing-container {
+        padding: 0 15px 100px 15px;
     }
 }
 
 @media (max-width: 450px) {
-    .container-explain .text{
-        font-size: 1.1rem;
+    .container-explain .text {
+        font-size: 1rem;
     }
 }
 
@@ -315,16 +340,8 @@ input[type="file"] {
         line-height: 22px;
     }
 
-    .advantage {
-        gap: 25px;
-    }
-
     .advantage .text {
         font-size: 0.9rem;
-    }
-
-    .leasing-container {
-        padding: 0 15px 100px 15px;
     }
 
     .custom-btn {
@@ -333,5 +350,11 @@ input[type="file"] {
 
     .container-explain .photo {
         min-width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    .main-photo {
+        height: 150px;
     }
 }

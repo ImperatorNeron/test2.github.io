@@ -63,7 +63,7 @@
 .photo-3 {
     position: relative;
     min-width: 250px;
-    padding-top: 65%;
+    padding-top: 70%;
     background-size: 100% 100%;
     background-position: center;
 }
@@ -134,12 +134,12 @@
 
 .left .title {
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 50px;
+    font-weight: 600;
+    margin-bottom: 35px;
 }
 
 .left .text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 25px;
 }
 
@@ -225,6 +225,7 @@ input[type="file"] {
 
     .advantage {
         width: 400px;
+        gap: 25px;
     }
 
     .what-is-trade-in,
@@ -233,6 +234,10 @@ input[type="file"] {
         padding: 0 30px 100px 30px;
         flex-direction: column;
         gap: 30px;
+    }
+
+    .advantages {
+        gap: 60px;
     }
 
     .container-little-about {
@@ -253,20 +258,41 @@ input[type="file"] {
     }
 
     .container-explain .text{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
+    .main-photo {
+        background-position: left;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-photo {
+        height: 300px;
+    }
 }
 
 @media (max-width: 665px){
     .advantage{
         width: 100%;
     }
-    .advantage{
-        gap: 50px;
-    }
     .main-photo {
-        height: 170px;
+        height: 210px;
+    }
+
+    .container-little-about {
+        padding: 55px 15px 60px 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .main-photo {
+        background-position: center;
+    }
+
+    .leasing-container {
+        padding: 0 15px 100px 15px;
     }
 }
 
@@ -288,7 +314,7 @@ input[type="file"] {
         padding: 0 15px 100px 15px;
     }
     .container-explain .text{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .advantages-title{
@@ -304,15 +330,8 @@ input[type="file"] {
         font-size: 1.2rem;
         line-height: 22px;
     }
-    .advantage{
-        gap: 25px;
-    }
     .advantage .text{
         font-size: 0.9rem;
-    }
-
-    .leasing-container{
-        padding: 0 15px 100px 15px;
     }
 
     .left .title{
@@ -325,5 +344,11 @@ input[type="file"] {
 
     .container-explain .photo{
         min-width: 100px;
+    }
+}
+
+@media (max-width: 300px) {
+    .main-photo {
+        height: 150px;
     }
 }
