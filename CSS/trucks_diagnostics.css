@@ -1,21 +1,18 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    padding-top: 70px;
+    margin-top: 56px;
 }
 
-.main-photo {
-    background-image: url('../photos/dungeor1.jpg');
-    background-size: cover;
-    background-position: center;
+.presentation-photo {
     height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .container-little-about {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 65px 250px 100px 250px;
+    padding: 85px 250px 100px 250px;
 }
 
 .container-little-about .title {
@@ -38,7 +35,7 @@
 .container-about-adr .photo {
     height: 500px;
     width: 750px;
-    background-image: url('../photos/tanker.jpg');
+    background-image: url('../photos/analysis.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -48,14 +45,44 @@
     margin-right: 50px;
 }
 
-.container-text .title {
+.container-text .title,
+.addition-services .title {
     font-size: 2rem;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
-.container-text ol {
+.container-text ul {
     font-size: 1.1rem;
     line-height: 25px;
+}
+
+.addition-services {
+    margin: 150px 50px 100px 50px;
+}
+
+.analisys-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.list-block {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.number {
+    font-size: 9rem;
+    font-weight: bold;
+    color: rgb(229, 229, 229);
+}
+
+.list-block .text {
+    position: relative;
+    left: -2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
 .form-container {
@@ -121,7 +148,12 @@ textarea {
     transition-duration: 0.3s;
 }
 
+
 @media (max-width: 1279px) {
+    .container-little-about .text {
+        padding-right: 0;
+    }
+
     .container-about-adr {
         flex-direction: column;
         margin: 0 15px 70px 15px;
@@ -130,8 +162,8 @@ textarea {
     .container-about-adr .photo {
         height: 0;
         width: 100%;
-        padding-top: 50%;
-        background-image: url('../photos/tanker.jpg');
+        padding-top: 90%;
+        background-image: url('../photos/analysis.jpg');
         background-size: 100% 100%;
         background-position: center;
     }
@@ -140,18 +172,30 @@ textarea {
         margin: 0 20px;
     }
 
-    .container-little-about .text {
-        padding-right: 0;
-    }
-
     .form-container {
         padding: 0 70px 100px 70px;
     }
 }
 
 @media (max-width: 1079px) {
-    .main-photo {
+    .container-little-about {
+        padding: 65px 15px 60px 15px;
+    }
+
+    .addition-services {
+        margin: 70px 15px;
+    }
+
+    .presentation-photo {
         height: 350px;
+    }
+
+    .analisys-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-block {
+        height: 150px;
     }
 
     .form-container {
@@ -159,38 +203,15 @@ textarea {
         flex-direction: column;
         gap: 30px;
     }
-
-    .container-little-about {
-        padding: 65px 15px 100px 15px;
-    }
 }
 
 @media (max-width: 800px) {
-    .main-photo {
+    .presentation-photo {
         height: 270px;
     }
-}
 
-@media (max-width: 630px) {
-    .main-photo {
-        height: 230px;
-        background-position: left;
-    }
-
-    .container-text .title {
-        font-size: 1.6rem;
-    }
-
-    .container-text ol {
-        font-size: 0.9rem;
-    }
-
-    .container-text {
-        margin: 0;
-    }
-
-    .container-about-adr {
-        gap: 40px;
+    .analisys-list {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -206,17 +227,39 @@ textarea {
         font-size: 0.9rem;
     }
 
-    .container-text .title,
     .left .title {
         font-size: 1.3rem;
     }
 
-    .container-text ol {
+    .presentation-photo {
+        height: 230px;
+        object-position: right;
+    }
+
+    .container-about-adr {
+        gap: 40px;
+    }
+
+    .container-text .title,
+    .addition-services .title {
+        font-size: 1.3rem;
+    }
+
+    .container-text ul {
         font-size: 0.9rem;
     }
 
-    .custom-btn {
-        width: 90%;
+    .container-text {
+        margin: 0;
     }
 
+    .form-container .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .list-block .text {
+        font-size: 0.9rem;
+    }
 }
