@@ -26,17 +26,18 @@ footer a {
     letter-spacing: 1.5px;
 }
 
-.quick img{
+.quick img {
     display: none;
     filter: invert(1);
     align-self: center;
     margin-left: auto;
 }
 
-.quick{
+.quick {
     display: flex;
     gap: 25px;
 }
+
 .quick-links {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@ footer a {
     letter-spacing: 1px;
 }
 
-.quick-links a:hover{
+.quick-links a:hover {
     color: white;
     transition-duration: 0.2s;
 }
@@ -91,6 +92,10 @@ footer a {
     letter-spacing: 1.5px;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 1270px) {
     footer {
         grid-template-columns: 2fr 1fr;
@@ -101,7 +106,7 @@ footer a {
         grid-row: 3;
     }
 
-    .quick img{
+    .quick img {
         display: block;
     }
 
@@ -113,7 +118,7 @@ footer a {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    
+
 }
 
 @media (max-width: 750px) {

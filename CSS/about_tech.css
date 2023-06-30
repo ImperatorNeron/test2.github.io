@@ -1,124 +1,103 @@
-.container-about-tech {
-    margin: 130px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 35px;
-    max-width: 1300px;
-    grid-template-areas:
-        "title photo"
-        "text photo"
-        "text photo"
-        "button photo";
+.semi-trailer-container {
+    background-color: rgb(247, 247, 247);
+    padding: 70px 0;
 }
 
-.about-tech-title {
-    font-weight: bold;
-    font-size: 2.3rem;
-    grid-area: title;
-}
-
-.about-tech-text {
-    grid-area: text;
-    font-size: 1.3rem;
-}
-
-.about-tech-img {
-    grid-area: photo;
-    background-image: url('../photos/IMG-8bac9a7a421e74bbbfe34a56a86eecf5-V.jpg');
-    background-size: cover;
-    background-position: center;
-    max-width: 620px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -20px;
-    border-radius: 5px;
+.semi-trailer-blocks-wrapper {
+    margin: 0 70px;
+    box-shadow: -5px 0 7px -7px rgba(0, 0, 0, 0.12), 5px 0 7px -7px rgba(0, 0, 0, 0.12);
 }
 
 
-.about-tech-more {
-    grid-area: button;
-    width: 200px;
-    font-size: 20px;
+.semi-trailer-block-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.semi-trailer-block-1 .title {
+    display: flex;
+    gap: 15px;
+}
+
+.semi-trailer-block-1 .title .text {
+    margin: auto 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.img-wrapper {
+    padding: 13px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.middle-img {
+    max-width: 75%;
+    margin: 0 auto;
+    border-top: 6px solid rgb(231, 231, 231);
+    border-bottom: 6px solid rgb(231, 231, 231);
+}
+
+.learn-about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.learn-about-buttons {
+    display: flex;
+    column-gap: 25px;
+    row-gap: 10px;
+}
+
+.learn-about-buttons>a {
+    flex: 1;
     text-align: center;
-    color: white;
-    padding: 15px 0;
-    border-radius: 10px;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(150, 150, 150);
+    padding: 10px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    transition-duration: 0.5s;
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
 }
 
-.about-tech-more:hover {
-    background-color: rgb(61, 75, 56);
-    transition-duration: 0.5s;
+.learn-about-buttons>a:hover {
+    background-color: rgba(150, 150, 150, 0.642);
+    transition-duration: 0.3s;
 }
 
-@media (max-width: 1550px) {
-    .container-about-tech{
-        margin: 130px 120px;
-        max-width: none;
-    }
-    .about-tech-img {
-        max-width: none;
-    }
-    
-}
-
-@media (max-width: 1400px) {
-    .container-about-tech {
-        margin: 130px 30px;
-        grid-template-areas:
-            "photo photo"
-            "photo photo"
-            "title title"
-            "text text"
-            "button button";
-    }
-
-    .about-tech-img {
-        background-image: url('../photos/IMG-96aa3b3ddccf13c8115bc463dc1b68e1-V.jpg');
-        height: 500px;
-    }
-
-    .about-tech-more {
-        align-self: self-end;
-        width: 100%;
-    }
-
-    .about-tech-more {
-        margin: 0 auto;
+@media (max-width: 1150px){
+    .semi-trailer-blocks-wrapper {
+        margin: 0;
+        box-shadow: 0;
     }
 }
 
-@media (max-width: 820px) {
-    .about-tech-img {
-        height: 300px;
+@media (max-width: 980px) {
+    .semi-trailer-block-1 {
+        margin: 0 15px;
     }
-    .container-about-tech{
-        margin: 70px 30px;
+
+    .middle-img {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 600px) {
-
-    .container-about-tech{
-        margin: 70px 15px;
-    }
-
-    .about-tech-img {
-        height: 200px;
-    }
-
-    .about-tech-title{
+@media (max-width: 430px) {
+    .semi-trailer-block-1 .title .text {
         font-size: 1.4rem;
     }
 
-    .about-tech-text{
-        font-size: 1.05rem;
+    .learn-about-buttons {
+        flex-direction: column;
     }
 }
 
-@media (max-width: 300px){
-    .about-tech-img {
-        height: 130px;
+@media (max-width: 330px) {
+    .semi-trailer-block-1 .title .text {
+        font-size: 1.2rem;
     }
 }

@@ -1,132 +1,112 @@
-.our-advantages {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 70px;
-    gap: 20px;
-    border-top: 2px dashed rgb(75, 75, 75);
-    border-bottom: 2px dashed rgb(78, 78, 78);
-    background-color: rgb(250, 251, 255);
+.advantages-block {
+    margin: 80px 50px;
 }
 
-.our-advantages .title3,
-.our-advantages .title4 {
-    text-align: center;
-}
-
-.our-advantages .title1 {
-    margin-right: 20%;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.our-advantages .title2,
-.our-advantages .title3 {
-    font-size: 1.5rem;
-}
-
-.our-advantages .title3 {
-    text-shadow: 1px 1px 1px rgb(2, 19, 73);
-}
-
-.our-advantages .title4 {
+.advantages-title {
+    margin-left: 100px;
     font-size: 2rem;
-    color: red;
-    text-shadow: 1px 1px 1px rgb(88, 0, 0);
+    font-weight: 600;
+    max-width: 800px;
+    line-height: 40px;
+}
+
+.advantages-story {
+    margin-left: 100px;
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+.our-advantages-title {
+    margin: 70px 0 0 100px;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .advantages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 40px;
-    justify-content: center;
-    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 30px 110px 70px 110px;
 }
 
 .advantage {
-    min-width: 210px;
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    text-align: center;
+    gap: 20px;
+    height: 72px;
 }
 
 .advantage .text {
-    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-
-    .our-advantages .title1 {
-        margin: 0;
-    }
+.add-title-1,
+.add-title-2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
-@media screen and (max-width: 912px) {
-    .our-advantages {
-        padding: 80px 25px;
-    }
+.add-title-2 {
+    color: red;
+    font-weight: bold;
+    margin-top: 25px;
+}
 
-    .our-advantages .title1 {
-        font-size: 2rem;
-    }
-
-    .our-advantages .title2,
-    .our-advantages .title3 {
-        font-size: 1.3rem;
-    }
-
-    .our-advantages .title4 {
-        font-size: 1.5rem;
+@media (max-width: 1200px) {
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .our-advantages .title1 {
+@media (max-width: 920px) {
+    .advantages {
+        margin: 30px 0 70px 0;
+    }
+
+    .advantages-title,
+    .advantages-story,
+    .our-advantages-title {
+        margin-left: 0;
+    }
+
+    .advantages-title,
+    .our-advantages-title {
         font-size: 1.6rem;
     }
+}
 
-    .our-advantages .title2,
-    .our-advantages .title3 {
-        font-size: 1.1rem;
-    }
-
-    .our-advantages .text {
-        font-size: 0.9rem;
+@media (max-width: 700px) {
+    .advantages-block {
+        margin: 80px 15px;
     }
 
     .advantages {
-        margin: 30px 0;
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .advantage {
-        flex-direction: row;
-        width: 80%;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        gap: 50px;
     }
 
     .advantage .text {
-        text-align: left;
+        max-width: 260px;
     }
 
-    .our-advantages .title1{
+    .add-title-1,
+    .add-title-2 {
         font-size: 1.2rem;
-    }
-
-    .our-advantages .title2{
-        font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 300px) {
+@media (max-width: 550px) {
+    .advantages {
+        margin-left: 15px;
+    }
 
-    .our-advantages .title2,
-    .our-advantages .title3 {
-        font-size: 1rem;
+    .advantages-title,
+    .our-advantages-title {
+        font-size: 1.3rem;
+        line-height: 30px;
     }
 }
