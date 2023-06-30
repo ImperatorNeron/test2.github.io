@@ -1,147 +1,140 @@
-.footer,
-.product,
-.service,
-.about-company,
-.contacts,
-.media {
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    background-color: #1d2228;
+    padding: 80px 100px;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+footer>div {
     display: flex;
     flex-direction: column;
-}
-
-.footer,
-.main-point,
-.footer-menu {
-    color: white;
-}
-
-.product,
-.service,
-.about-company,
-.contacts,
-.footer-top,
-.header-menu {
-    gap: 20px;
-}
-
-.footer {
-    padding: 40px 100px 30px 100px;
-    gap: 55px;
-    background-color: #1d2228;
-}
-
-.footer-top,
-.header-menu,
-.footer-media {
-    display: flex;
-}
-
-.main-point,
-.contact-with-us,
-.footer-menu {
-    text-decoration: none;
-}
-
-.main-point,
-.contact-with-us,
-.title-footer {
-    font-weight: bold;
-}
-
-.header-menu {
-    gap: 70px;
-}
-
-.main-point,
-.title-footer {
-    font-size: 1.3rem;
-}
-
-.footer-menu,
-.rights,
-.contact-with-us {
-    font-size: 1rem;
-}
-
-.contact-with-us,
-.contact-with-us:hover {
-    transition-duration: 0.3s;
-}
-
-.inverted {
-    filter: invert(1);
-}
-
-.media {
+    color: rgb(136, 136, 146);
     gap: 30px;
-    margin-left: auto;
-    align-items: center;
 }
 
-.footer-media {
-    gap: 40px;
+footer a {
+    text-decoration: none;
+    color: rgb(136, 136, 146);
 }
 
-.title-footer {
-    text-align: center;
+.quick,
+.sm-title {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.5px;
 }
 
-.contact-with-us {
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-}
-
-.contact-with-us:hover {
-    background-color: rgb(186, 207, 226);
-}
-
-.arrow {
+.quick img{
     display: none;
+    filter: invert(1);
+    align-self: center;
+    margin-left: auto;
 }
 
-@media (max-width: 1200px) {
-    .main-point {
-        font-size: 1.2rem;
-    }
+.quick{
+    display: flex;
+    gap: 25px;
+}
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
 
-@media (max-width: 1024px) {
-    .footer {
-        padding: 40px 30px 30px 30px;
-    }
-
-    .header-menu {
-        gap: 30px;
-    }
+.quick-links a:hover{
+    color: white;
+    transition-duration: 0.2s;
 }
 
-@media (max-width: 820px) {
+.copyrights {
+    margin-top: auto;
+}
 
-    .header-menu,
-    .footer-top {
-        flex-direction: column;
+.copyrights a {
+    color: rgb(0, 136, 255);
+}
+
+.company-block .text,
+.copyrights {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.our-sm a {
+    filter: invert(1);
+    border-radius: 100%;
+}
+
+.our-sm {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sm-title {
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.contact-button {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 136, 255);
+    margin-top: auto;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 1270px) {
+    footer {
+        grid-template-columns: 2fr 1fr;
+        padding: 35px 50px;
     }
 
-    .footer-menu {
+    .company-block {
+        grid-row: 3;
+    }
+
+    .quick img{
+        display: block;
+    }
+
+    .quick-links {
         display: none;
     }
 
-    .media {
-        margin: 50px 0 0 0;
+    .quick-links-block {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    footer {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+        column-gap: 0px;
     }
 
-    .nav-point {
-        display: flex;
-        justify-content: space-between;
+    .company-block {
+        grid-row: 4;
     }
 
-    .arrow {
-        display: block;
-        background-image: url("../photos/arrow-down-sign-to-navigate.png");
-        background-size: cover;
-        background-position: center;
-        filter: invert(1);
-        width: 30px;
+    .quick,
+    .sm-title {
+        font-size: 1.3rem;
+    }
+
+    .quick-links,
+    .company-block .text,
+    .copyrights {
+        font-size: 1rem;
     }
 }
