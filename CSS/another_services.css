@@ -1,88 +1,121 @@
-.title-also {
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-top: 2px dashed rgb(75, 75, 75);
-    text-align: center;
-    padding-top: 80px;
-}
-
 .services-cards {
     display: flex;
-    flex-wrap: wrap;
-    padding: 50px 15px;
-    gap: 50px;
+    flex-direction: column;
+    gap: 65px;
+    padding: 80px 50px;
+}
+
+.about-services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 110px;
+}
+
+.about-services-cards .title {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 500px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.about-services-cards .text {
+    width: 750px;
+}
+
+.castom-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+}
+
+.custom-card-img {
+    width: 500px;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.custom-card-img-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 50px;
+}
+
+.icon {
+    filter: invert(1)
+}
+
+.overlay div {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .custom-card {
-    height: 300px;
-    width: 550px;
-    text-decoration: none;
-    background-image: url('../photos/palne.jpg');
-    background-size: cover;
-    background-position: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition-duration: 0.3s;
-}
-
-.custom-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.674);
-    gap: 10px;
-}
-
-.custom-card-title {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 0 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .custom-card:hover {
-    scale: 1.05;
-    transition-duration: 0.3s;
+    transform: scale(1.05);
 }
 
-.custom-card-logo{
-    background-size: cover;
-    background-position: center;
-    height: 50px;
-    width: 50px;
-    filter: invert(1);
+@media (max-width: 1150px) {
+    .castom-cards {
+        grid-template-columns: 1fr;
+        margin: 0 110px;
+    }
+
+    .custom-card-img {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
 }
 
-.logo_1{
-    background-image: url('../photos/test.png');
-}
+@media (max-width: 970px) {
+    .about-services-cards {
+        margin: 0 15px;
+    }
 
-.logo_2{
-    background-image: url('../photos/gas-station.png');
-}
-
-@media (max-width: 1250px) {
-    .custom-card {
+    .about-services-cards .text {
         width: 100%;
     }
+
+    .services-cards {
+        padding: 80px 0px;
+    }
 }
 
-@media (max-width: 500px) {
-    .title-also {
-        font-size: 1.8rem;
-    }
-    .custom-card{
-        height: 200px;
+@media (max-width: 710px) {
+    .castom-cards {
+        margin: 0 15px;
     }
 
-    .custom-card-logo{
-        height: 40px;
-        width: 40px;
+    .about-services-cards .title {
+        width: 100%;
     }
-    .custom-card-title{
-        font-size: 1.1rem;
+
+    .overlay {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .overlay div {
+        text-align: center;
     }
 }

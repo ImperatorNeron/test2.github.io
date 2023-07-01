@@ -1,11 +1,11 @@
 .semi-trailer-container {
     background-color: rgb(247, 247, 247);
-    padding: 70px 0;
+    padding: 30px 0;
 }
 
 .semi-trailer-blocks-wrapper {
     margin: 0 70px;
-    box-shadow: -5px 0 7px -7px rgba(0, 0, 0, 0.12), 5px 0 7px -7px rgba(0, 0, 0, 0.12);
+    box-shadow: -6px 0 7px -7px rgba(0, 0, 0, 0.12), 6px 0 7px -7px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -20,6 +20,7 @@
 .semi-trailer-block-1 .title {
     display: flex;
     gap: 15px;
+    margin-top: 30px;
 }
 
 .semi-trailer-block-1 .title .text {
@@ -32,6 +33,7 @@
     padding: 13px;
     border-radius: 100%;
     border: 2px solid black;
+    height: 65px;
 }
 
 .middle-img {
