@@ -1,258 +1,349 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    padding-top: 70px;
+.main-photo {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin-top: 62px;
 }
 
-.photo{
-    /* background-image: url('https://grunwald.ru/upload/resize_cache/iblock/dbf/7ps1t9305lnqn5qiw6qzb5qdse8hd0wj/1920_532_240cd750bba9870f18aada2478b24840a/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D1%80%D0%B8%D1%86%D0%B5%D0%BF%D1%8B%20%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%BE%D0%B2%D0%BE%D0%B7%D1%8B%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.webp'); */
-    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: white;
+.tech-info-part-2 {
+    background-color: rgb(241, 241, 241);
 }
 
-.main-title{
-    margin-left: 130px;
-    text-shadow: 2px 2px 5px #414eff;
+.about-trailers-container {
+    padding: 70px 0 80px 150px;
 }
 
-.custom-cards-container{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 0 100px;
+.about-trailers-container .title {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 35px;
+    margin-bottom: 20px;
 }
 
-.custom-cards-container-title{
-    font-size: 3rem;
+.about-trailers-container .text {
+    max-width: 850px;
 }
 
-.custom-cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.custom-card{
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 2px;
-    text-decoration: none;
-    color: black;
-    gap: 20px;
-    padding: 30px;
-    border-bottom: 10px solid rgb(255, 255, 255);
-    transition-duration: 0.3s;
-}
-
-.custom-card-photo{
-    height: 170px;
-    transition: transform 0.2s ease-in-out; /* додали зміну розміру зображення з ефектом плавності */
-}
-
-.custom-card:hover .custom-card-photo{
-    transform: scale(1.05); /* збільшення розміру зображення на 20% при наведенні */
-}
-
-.custom-card:hover{
-    border-bottom: 10px solid black;
-    transition-duration: 0.3s;
-}
-
-.custom-card-title{
-    font-size: 1.5rem;
+.gallery-container .title {
     text-align: center;
-    padding-top: 15px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: auto;
 }
 
-.container-about, .about-topic{
+/* https://open-code.tech/en/post-467/ - тут є той слайдер який мені нада  */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-}
-
-.about-topic{
-    flex-direction: column;
-    width: 65%;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    background-color: #e5e5e5;
-    transform: skew(20deg);
-    box-sizing: border-box;
-    margin: 0 -120px;
 }
 
-.about-topic-help{
-    transform: skew(-20deg);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 50px 170px;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
 }
 
-.topic-title{
-    font-size: 1.8rem;
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.topic-text{
-    font-size: 1.1rem;
-}
-
-.about-photo{
-    background-image: url("../photos/IMG-276a777b2f0b8df4285dd2841c25883b-V.jpg");
+.swiper-slide {
     background-size: cover;
     background-position: center;
-    flex: 1;
 }
 
-.custom-card-content{
+.mySwiper2,
+.mySwiper3,
+.mySwiper5 {
+    height: auto;
+    width: 100%;
+}
+
+.mySwiper,
+.mySwiper4,
+.mySwiper6 {
+    height: auto;
+    width: 65%;
+    box-sizing: border-box;
+    margin-top: -45px;
+}
+
+.mySwiper .swiper-slide,
+.mySwiper4 .swiper-slide,
+.mySwiper6 .swiper-slide {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    background-color: white;
+}
+
+.mySwiper .swiper-slide-thumb-active,
+.mySwiper4 .swiper-slide-thumb-active,
+.mySwiper6 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: #000000;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.582);
+    height: 100%;
+    margin: auto;
+    top: 0;
+    width: 10.5%;
+    transition-duration: 0.3s;
+}
+
+.swiper .swiper-button-next {
+    margin-right: -13px;
+}
+
+.swiper .swiper-button-prev {
+    margin-left: -13px;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+.characteristics-block {
+    margin: 70px 110px;
+}
+
+.parameters {
+    padding-bottom: 60px;
+}
+
+.parameters .p-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.border-element,
+.gallery-container-border {
+    height: 3px;
+    background-color: rgba(128, 128, 128, 0.575);
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.border-element {
+    width: 100%;
+}
+
+.gallery-container-border {
+    width: 70%;
+    margin: 20px auto 50px auto;
+}
+
+.par-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.key-value {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    height: 135px;
+    padding-bottom: 30px;
+    gap: 15px;
 }
 
-@media (max-width: 1400px){
-    .about-topic{
-        width: 70%;
-    }
-    .about-topic-help{
-        padding: 50px 100px 50px 170px;
-    }
+.key-value:not(:nth-child(n+2):nth-last-child(-n+2)) {
+    border-bottom: 1px solid rgb(189, 189, 189);
 }
 
-@media (max-width: 1200px){
-   .topic-text{
-    font-size: 1.1rem;
-   }
+.key-value .key {
+    flex: 3;
 }
 
-@media (max-width: 1120px){
-    .container-about{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-    .about-photo{
-        height: 450px;
-        width: 100%;
-        flex: none;
-    }
-    .about-topic, .about-topic-help{
-        transform: skew(0deg);
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        height: auto;
-    }
-
-    .about-topic{
-        padding: 20px;
-    }
+.key-value .value {
+    flex: 4;
 }
 
-@media (max-width: 910px){
-    .custom-card{
-        width: 100%;
-        height: auto;
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 70px;
+}
+
+.second-tabs {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.tabs .tab,
+.tabs .second-tab {
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+}
+
+.tabs .active-tab,
+.tabs .second-active-tab {
+    background-color: black;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-info,
+.second-tab-info {
+    display: none;
+}
+
+.tab-info-active {
+    display: block;
+    border: 1px solid black;
+    padding: 20px 20px 8px 20px;
+    order: 9;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.second-tab-info-active {
+    display: block;
+    border: 1px solid black;
+    padding: 20px 20px 8px 20px;
+    order: 7;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+@media (max-width: 1100px) {
+
+    .gallery-container .title {
+        font-size: 1.5rem;
+        padding: 10px;
     }
 
-    .custom-card-photo{
+    .about-trailers-container {
+        padding: 70px 30px 60px 30px;
+    }
+
+    .about-trailers-container .title {
+        max-width: 100%;
+    }
+
+    .about-trailers-container .text {
+        max-width: 100%;
+    }
+
+    .mySwiper,
+    .mySwiper4,
+    .mySwiper6 {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        display: none;
+    }
+
+
+    .characteristics-block {
+        margin: 70px 15px 0 15px;
+    }
+
+    .par-block {
+        grid-template-columns: 1fr;
+    }
+
+    .key-value>div {
         flex: 1;
-        height: auto;
-        width: auto;
-        padding: 20px 20px 0 20px;
-    }
-    .custom-card-content{
-        flex: 1;
-        height: auto;
-        width: auto;
-        padding: 0 20px 20px 20px;
     }
 
-    .custom-card-title{
-        font-size: 2rem;
+    .key-value:not(:last-child) {
+        border-bottom: 1px solid rgb(189, 189, 189);
     }
 
-    .custom-card-mini-text{
-        font-size: 1.2rem;
+    .tabs {
+        display: flex;
+        flex-direction: column;
     }
 
-    .main-title{
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        font-size: 2.2rem;
+    .tab-info-active,
+    .second-tab-info-active {
+        order: 0;
     }
-    .custom-cards-container{
-        padding: 0 15px;
+
+    .tabs .tab,
+    .tabs .second-tab {
+        text-align: left;
     }
-    .custom-card{
-        padding: 0;
+
+    .tabs .active-tab,
+    .tabs .second-active-tab {
+        border-radius: 0;
     }
-    .custom-cards-container-title{
-        font-size: 2.1rem;
-        text-align: center;
+
+    .tabs .tab:last-child,
+    .tabs .second-tab:last-child,
+    .tabs {
+        border-bottom: 1px solid rgb(215, 215, 215);
+    }
+
+    .tab-info-active,
+    .tab-info-active:last-child,
+    .tabs .tab,
+    .second-tab-info-active,
+    .second-tab-info-active:last-child,
+    .tabs .second-tab {
+        border: 1px solid rgb(215, 215, 215);
+        border-bottom: none;
     }
 }
 
-@media (max-width: 700px){
-    .topic-title{
+@media (max-width: 800px) {
+    .main-photo {
+        height: 300px;
+    }
+
+    .about-trailers-container {
+        padding: 70px 15px 60px 15px;
+    }
+
+    .gallery-container .title {
+        width: 100%;
         font-size: 1.4rem;
     }
-}
 
-@media (max-width: 650px){
-    .about-photo{
-        height: 300px;
+    .parameters .p-title {
+        font-size: 1.5rem;
     }
-}
 
-@media (max-width: 550px){
-    .photo{
-        height: 300px;
+    .key-value {
+        flex-wrap: wrap;
     }
 }
 
-@media (max-width: 450px){
-    .custom-card-title{
-        font-size: 1.3rem;
-    }
-    .custom-card-mini-text{
-        font-size: 1rem;
-    }
-    .custom-card-content{
-        gap: 20px;
-    }
-    .photo{
-        height: 300px;
-    }
-}
-
-@media (max-width: 400px){
-    .photo{
+@media (max-width: 500px) {
+    .main-photo {
         height: 230px;
     }
-    .about-photo{
-        height: 200px;
-    }
-    .topic-title{
-        font-size: 1.4rem;
-    }
 
-    .topic-text{
-        font-size: 1rem;
+    .about-trailers-container .title {
+        font-size: 1.5rem;
     }
 }
