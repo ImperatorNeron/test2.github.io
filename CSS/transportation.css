@@ -1,14 +1,14 @@
 .main {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 62px;
 }
 
 .main-photo {
-    background-image: url('../photos/dungeor1.jpg');
-    background-size: cover;
-    background-position: center;
+    width: 100%;
     height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .container-little-about {
