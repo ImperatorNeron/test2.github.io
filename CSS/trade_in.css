@@ -5,7 +5,7 @@
 }
 
 .main-photo {
-    background-image: url('https://grunwald.ru/upload/resize_cache/iblock/467/ue7yq7feffmbki1q5r97g6sk6kcfbry5/1920_532_240cd750bba9870f18aada2478b24840a/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D1%80%D0%B8%D1%86%D0%B5%D0%BF%D1%8B%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B5%20%D1%82%D1%80%D0%B5%D0%B9%D0%B4-%D0%B8%D0%BD%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.webp');
+    background-image: url('https://grunwald.ru/upload/resize_cache/iblock/ab2/mobl23yowtbnv4rtext37w1qfxmqn7hl/1920_532_240cd750bba9870f18aada2478b24840a/%D0%9F%D0%BE%D0%BB%D1%83%D0%BF%D1%80%D0%B8%D1%86%D0%B5%D0%BF%D1%8B_%D0%B2_%D1%82%D1%80%D0%B5%D0%B9%D0%B4_%D0%B8%D0%BD.webp');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -39,6 +39,7 @@
 .advantages {
     display: flex;
     gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .what-is-trade-in,
@@ -124,7 +125,7 @@
 .leasing-container {
     display: flex;
     gap: 70px;
-    padding: 0 150px 100px 150px;
+    padding: 50px 150px 100px 150px;
 }
 
 .left {
@@ -211,7 +212,7 @@ input[type="file"] {
     .what-is-trade-in,
     .advantages,
     .leasing-container {
-        padding: 0 70px 100px 70px;
+        padding: 30px 70px 100px 70px;
     }
 }
 
@@ -230,7 +231,7 @@ input[type="file"] {
     .what-is-trade-in,
     .advantages,
     .leasing-container {
-        padding: 0 30px 100px 30px;
+        padding: 30px 30px 100px 30px;
         flex-direction: column;
         gap: 30px;
     }
@@ -293,7 +294,7 @@ input[type="file"] {
     }
 
     .leasing-container {
-        padding: 0 15px 100px 15px;
+        padding: 30px 15px 100px 15px;
     }
 }
 

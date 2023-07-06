@@ -132,3 +132,6 @@ second_tabs.forEach((tab, index) => {
         second_last_active_tab_info = second_tabs_info[index];
     });
 });
+
+
+
